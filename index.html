@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>랜딩페이지</title>
+
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function tabChange(id){
+            for(i=1; i<=10; i++){
+                if(id==i){
+                    $("#tab_box"+id).fadeIn(600);
+                    $("#Tab"+id).addClass("on");
+                }else{
+                    $("#tab_box"+i).hide();
+                    $("#Tab"+i).removeClass("on");
+                }
+            }
+        }
+    </script>
+
+    <div id="wrap">
+        <div class="main">
+            <section class="section1 fx">
+                <div class="container grid">
+                    <ul class="menu fx">
+                        <li><a href="#tabChange" onclick="tabChange(0)" id="Tab1" class="on">Mr.<b>CSK</b></a></li>
+                        <li><a href="#tabChange" onclick="tabChange(1)" id="Tab2">현대그룹</a></li>
+                        <li><a href="#tabChange" onclick="tabChange(2)" id="Tab3">청주시설관리공단</a></li>
+                        <li><a href="#tabChange" onclick="tabChange(3)" id="Tab4">벤프레이어</a></li>
+                    </ul>
+                    <div class="tab_box grid">
+                        <div id="tab_box1" style="display: none;"><a href="#page1">more</a></div>
+                        <div id="tab_box2" style="display: none;"><a href="#page2">more</a></div>
+                        <div id="tab_box3" style="display: none;"><a href="#page3">more</a></div>
+                        <div id="tab_box4" style="display: none;"><a href="#page4">more</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_content" id="page1">
+                <div class="container fx grid">
+                    <div class="title fx">
+                        <span class="desc1" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">HYUNDAI</span>
+                    </div>
+                    <div class="item fx" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="700">
+                        <div class="img_box"><img src="./img/page1_02.jpg"></div>
+
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="500">
+                        <div class="img_box"><img src="./img/page1_01.jpg"></div>
+                        <div class="text_box">
+                            <a href="">More View</a>
+                            <p>현대그룹 사이트 리뉴얼  </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_content" id="page2">
+                <div class="container fx grid">
+                    <div class="title fx">
+                        <span class="desc1" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">청주시<br>시설관리공단</span>
+                    </div>
+                    <div class="item fx" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="700">
+                        <!-- <div class="img_box"><img src="./img/page2_01.jpg"></div> -->
+
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="500">
+                        <div class="img_box"><img src="./img/page2_01.jpg"></div>
+                        <div class="text_box">
+                            <a href="">More View</a>
+                            <p>청주시 시설관리공단의 홈페이지 리뉴얼  </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_content" id="page3">
+                <div class="container fx grid">
+                    <div class="title fx">
+                        <span class="desc1" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="300">BENPRAYER</span>
+                    </div>
+                    <div class="item fx" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="700">
+                        <div class="img_box"><img src="./img/page3_01.jpg"></div>
+
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="500">
+                        <div class="img_box"><img src="./img/page3_02.jpg"></div>
+                        <div class="text_box">
+                            <a href="">More View</a>
+                            <p>헬멧 브랜드 벤프레이어 웹사이트 제작.  </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="container">
+
+            </div> -->
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
